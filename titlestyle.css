@@ -10,6 +10,7 @@ h1 {
     text-align: center;
     letter-spacing: 5px;
     animation: title 10s infinite linear;
+    text-shadow: 2px 2px blue;
 }
 h2 {
     color: cyan;
@@ -30,6 +31,75 @@ p{
     padding: 25px;
     text-align: center;
     background-color: black;
+}
+
+.tilebar{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 20px;
+}
+
+hr{
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+/* Games Button */
+.button_games{
+    background-image: url(assets/button_games.png);
+    background-color: rgba(0, 0, 0, 0);
+    width: 256px;
+    height: 128px;
+    border-width: 0px;
+    mix-blend-mode: screen;
+    animation: title_button_deselect 0.1s forwards;
+}
+
+.button_games:hover {
+    background-image: url(assets/button_games_hover.gif);
+}
+
+.button_games:active{
+    animation: title_button_select 0.1s forwards;
+}
+
+/* Music Button */
+.button_music{
+    background-image: url(assets/button_music.png);
+    background-color: rgba(0, 0, 0, 0);
+    width: 256px;
+    height: 128px;
+    border-width: 0px;
+    mix-blend-mode: screen;
+    animation: title_button_deselect 0.1s forwards;
+}
+
+.button_music:hover {
+    background-image: url(assets/button_music_hover.gif);
+}
+
+.button_music:active{
+    animation: title_button_select 0.1s forwards;
+}
+
+/* About Button */
+.button_about{
+    background-image: url(assets/button_about.png);
+    background-color: rgba(0, 0, 0, 0);
+    width: 256px;
+    height: 128px;
+    border-width: 0px;
+    mix-blend-mode: screen;
+    animation: title_button_deselect 0.1s forwards;
+}
+
+.button_about:hover {
+    background-image: url(assets/button_about_hover.gif);
+}
+
+.button_about:active{
+    animation: title_button_select 0.1s forwards;
 }
 
 .dropdown {
@@ -94,4 +164,14 @@ p{
     0%{ background-position-y: 0px; }
     100% { background-position: 256px; }
     100%{ background-position-y: 256px; }
+}
+
+@keyframes title_button_select {
+    0%{ scale: 1;}
+    100%{ scale: 0.8;}
+}
+
+@keyframes title_button_deselect {
+    0%{ scale: 0.8;}
+    100%{ scale: 1;}
 }
