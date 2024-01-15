@@ -77,6 +77,7 @@ hr{
 
 /* Games Button */
 .button_games{
+    z-index: 10;
     background-image: url(assets/button_games.png);
     background-color: transparent;
     opacity: 1.0;
@@ -84,7 +85,7 @@ hr{
     background-position: center;
     width: 256px;
     height: 128px;
-    mix-blend-mode: screen;
+    mix-blend-mode: normal;
     box-sizing: border-box;
     display: inline-block;
     transition: scale 0.1s;
@@ -101,6 +102,7 @@ hr{
 
 /* Music Button */
 .button_music{
+    z-index: 10;
     background-image: url(assets/button_music.png);
     background-color: transparent;
     opacity: 1.0;
@@ -108,7 +110,7 @@ hr{
     border: none;
     width: 256px;
     height: 128px;
-    mix-blend-mode: screen;
+    mix-blend-mode: normal;
     box-sizing: border-box;
     display: inline-block;
     transition: scale 0.1s;
@@ -125,6 +127,7 @@ hr{
 
 /* About Button */
 .button_about{
+    z-index: 10;
     background-image: url(assets/button_about.png);
     background-color: transparent;
     opacity: 1.0;
@@ -132,7 +135,7 @@ hr{
     border: none;
     width: 256px;
     height: 128px;
-    mix-blend-mode: screen;
+    mix-blend-mode: normal;
     box-sizing: border-box;
     display: inline-block;
     transition: scale 0.1s;
