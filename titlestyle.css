@@ -78,10 +78,10 @@ hr{
 /* Games Button */
 .button_games{
     background-image: url(assets/button_games.png);
+    background-color: white;
+    background-position: center;
     width: 256px;
     height: 128px;
-    border-style: none;
-    border-radius: 11px;
     mix-blend-mode: screen;
     box-sizing: border-box;
     display: inline-block;
@@ -100,10 +100,10 @@ hr{
 /* Music Button */
 .button_music{
     background-image: url(assets/button_music.png);
+    background-color: white;
+    background-position: center;
     width: 256px;
     height: 128px;
-    border-style: none;
-    border-radius: 11px;
     mix-blend-mode: screen;
     box-sizing: border-box;
     display: inline-block;
@@ -122,10 +122,10 @@ hr{
 /* About Button */
 .button_about{
     background-image: url(assets/button_about.png);
+    background-color: white;
+    background-position: center;
     width: 256px;
     height: 128px;
-    border-style: none;
-    border-radius: 11px;
     mix-blend-mode: screen;
     box-sizing: border-box;
     display: inline-block;
