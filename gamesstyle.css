@@ -1,0 +1,183 @@
+body {
+    background-image: url("assets/background2.png");
+    background-repeat: repeat;
+    animation: bg_scroll 20s infinite linear;
+}
+h1 {
+    font-family: titleFont;
+    color: yellow;
+    text-align: center;
+    letter-spacing: 5px;
+    animation: title 10s infinite linear;
+    text-shadow: 2px 2px blue;
+}
+h2 {
+    color: white;
+    font-family: bodyFont;
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 4px;
+    font-weight: lighter;
+}
+p{
+    font-size: x-large;
+    font-family: bodyFont;
+    color: white;
+}
+
+.title_link{
+    font-family: bodyFont;
+    font-size: 24px;
+    color: yellow;
+}
+
+.games_holder{
+    text-align: center;
+    word-spacing: 10px;
+}
+
+#game_button{
+    border-width: 4px;
+    border-radius: 15px;
+    border-style: solid;
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 256px;
+    height: 128px;
+    padding: 25px;
+    text-align: center;
+    background-color: black;
+    background-position: center;
+    margin-top: 10px;
+
+    border-color: cornflowerblue;
+    transition: scale 0.2s;
+}
+
+#game_button:active{
+    scale: 0.8;
+}
+
+#game_button:hover{
+    animation: game_anim 3s infinite;
+}
+
+.tilebar{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 20px;
+}
+
+.gradbar{
+    background-image: linear-gradient(to right, red , yellow, rgba(0,0,1,0));
+    height: 10px;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.gradbar2{
+    background-image: linear-gradient(to right, cyan , lime, rgba(0,0,1,0));
+    height: 10px;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#jamcontainer{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(1, 1, 1, 0.8);
+}
+
+#jampopup{
+    display: flex;
+    position: absolute;
+    margin: 10%;
+    width: 80%;
+    height: 60%;
+    background-color: black;
+    border-radius: 15px;
+    border: solid;
+}
+
+@keyframes game_anim {
+    100%,0%{
+        border-color: rgb(255,0,0);
+    }
+    8%{
+        border-color: rgb(255,127,0);
+    }
+    16%{
+        border-color: rgb(255,255,0);
+    }
+    25%{
+        border-color: rgb(127,255,0);
+    }
+    33%{
+        border-color: rgb(0,255,0);
+    }
+    41%{
+        border-color: rgb(0,255,127);
+    }
+    50%{
+        border-color: rgb(0,255,255);
+    }
+    58%{
+        border-color: rgb(0,127,255);
+    }
+    66%{
+        border-color: rgb(0,0,255);
+    }
+    75%{
+        border-color: rgb(127,0,255);
+    }
+    83%{
+        border-color: rgb(255,0,255);
+    }
+    91%{
+        border-color: rgb(255,0,127);
+    }
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url(assets/GinzaNarrow-Medium.d050624c.otf);
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(assets/NamcoRegular-lgzd.ttf);
+}
+
+@keyframes title {
+    0%, 100%   {color: yellow;}
+    20%  {color: red;}
+    40%  {color: violet;}
+    60% {color: blue;}
+    80% {color: lime;}
+}
+
+@keyframes bg_scroll {
+    0%{ background-position-x: 0px;}
+    0%{ background-position-y: 0px; }
+    100% { background-position: 256px; }
+    100%{ background-position-y: 256px; }
+}
+
+@keyframes title_button_select {
+    0%{ scale: 1;}
+    100%{ scale: 0.8;}
+}
+
+@keyframes title_button_deselect {
+    0%{ scale: 0.8;}
+    100%{ scale: 1;}
+}

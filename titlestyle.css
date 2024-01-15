@@ -2,7 +2,7 @@ body {
     background-color: black;
     background-image: url("assets/background1.png");
     background-repeat: repeat;
-    animation: bg_scroll 12s infinite linear;
+    animation: bg_scroll 20s infinite linear;
 }
 h1 {
     font-family: titleFont;
@@ -45,61 +45,105 @@ hr{
     border-radius: 5px;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext{
+    scale: 0;
+    transition: scale 0.1s;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    scale: 1;
+}
+  
+
 /* Games Button */
 .button_games{
     background-image: url(assets/button_games.png);
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     width: 256px;
     height: 128px;
     border-width: 0px;
     mix-blend-mode: screen;
-    animation: title_button_deselect 0.1s forwards;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: scale 0.1s;
 }
 
 .button_games:hover {
     background-image: url(assets/button_games_hover.gif);
+    cursor:pointer;
 }
 
 .button_games:active{
-    animation: title_button_select 0.1s forwards;
+    scale: 0.8;
 }
 
 /* Music Button */
 .button_music{
     background-image: url(assets/button_music.png);
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     width: 256px;
     height: 128px;
     border-width: 0px;
     mix-blend-mode: screen;
-    animation: title_button_deselect 0.1s forwards;
+    transition: scale 0.1s;
 }
 
 .button_music:hover {
     background-image: url(assets/button_music_hover.gif);
+    cursor:pointer;
 }
 
 .button_music:active{
-    animation: title_button_select 0.1s forwards;
+    scale: 0.8;
 }
 
 /* About Button */
 .button_about{
     background-image: url(assets/button_about.png);
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     width: 256px;
     height: 128px;
     border-width: 0px;
     mix-blend-mode: screen;
-    animation: title_button_deselect 0.1s forwards;
+    transition: scale 0.1s;
 }
 
 .button_about:hover {
     background-image: url(assets/button_about_hover.gif);
+    cursor:pointer;
 }
 
 .button_about:active{
-    animation: title_button_select 0.1s forwards;
+    scale: 0.8;
+}
+
+.contactbutton{
+    background-color: transparent;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border: none;
+    cursor: pointer;
 }
 
 .dropdown {
