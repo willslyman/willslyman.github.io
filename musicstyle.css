@@ -1,0 +1,74 @@
+body {
+    background-color: black;
+    background-repeat: repeat;
+}
+h1 {
+    font-family: titleFont;
+    color: yellow;
+    text-align: center;
+    letter-spacing: 5px;
+    animation: title 10s infinite linear;
+    text-shadow: 2px 2px blue;
+}
+h2 {
+    color: white;
+    font-family: bodyFont;
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 4px;
+    font-weight: lighter;
+}
+h3{
+    color: white;
+    font-family: bodyFont;
+    font-size: 24px;
+    font-weight: lighter;
+    margin: 0px;
+}
+p{
+    font-size: 18px;
+    font-family: bodyFont;
+    color: white;
+}
+
+.title_link{
+    font-family: bodyFont;
+    font-size: 24px;
+    color: yellow;
+}
+
+.song{
+    padding: 15px;
+    border-width: 4px;
+    border-radius: 15px;
+    border-style: solid;
+    
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 450px;
+    height: 200px;
+    background-color: black;
+    text-align: center;
+
+    display: inline-block;
+    word-spacing: 0px;
+}
+
+@keyframes title {
+    0%, 100%   {color: yellow;}
+    20%  {color: red;}
+    40%  {color: violet;}
+    60% {color: blue;}
+    80% {color: lime;}
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url(assets/GinzaNarrow-Medium.d050624c.otf);
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(assets/NamcoRegular-lgzd.ttf);
+}
