@@ -19,7 +19,7 @@ h2 {
     font-weight: lighter;
 }
 p{
-    font-size: 18px;
+    font-size: x-large;
     font-family: bodyFont;
     color: white;
 }
@@ -31,11 +31,27 @@ p{
 }
 
 .bodydiv{
+    margin: auto;
     outline-width: 5px;
     outline-style: solid;
+    outline-color: yellow;
     border-radius: 25px;
-    padding: 25px;
+    padding: 5px;
     text-align: center;
+    background-color: black;
+    outline-color: yellow;
+    width: 80%;
+}
+
+.resdiv{
+    width: 800px;
+    height: 1000px;
+    margin: auto;
+    outline-width: 5px;
+    outline-style: solid;
+    border-radius: 0px;
+    text-align: center;
+    outline-color: cyan;
     background-color: black;
 }
 

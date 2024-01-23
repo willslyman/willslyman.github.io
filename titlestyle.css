@@ -27,17 +27,6 @@ p{
     color: white;
 }
 
-.bodydiv{
-    outline-width: 5px;
-    outline-style: solid;
-    outline-color: yellow;
-    border-radius: 25px;
-    padding: 25px;
-    text-align: center;
-    background-color: black;
-    outline-color: yellow;
-}
-
 .bottomdiv{
     outline-width: 5px;
     outline-style: solid;
