@@ -1,6 +1,7 @@
 body {
-    background-color: black;
+    background-image: url("assets/background3.png");
     background-repeat: repeat;
+    animation: bg_scroll 20s infinite linear;
 }
 h1 {
     font-family: titleFont;
@@ -71,4 +72,11 @@ p{
 @font-face {
     font-family: titleFont;
     src: url(assets/NamcoRegular-lgzd.ttf);
+}
+
+@keyframes bg_scroll {
+    0%{ background-position-x: 0px;}
+    0%{ background-position-y: 0px; }
+    100% { background-position: 256px; }
+    100%{ background-position-y: 256px; }
 }
