@@ -1,4 +1,5 @@
 body {
+    background-color: black;
     background-image: url("assets/background3.png");
     background-repeat: repeat;
     animation: bg_scroll 20s infinite linear;
